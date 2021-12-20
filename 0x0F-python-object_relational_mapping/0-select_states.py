@@ -36,4 +36,6 @@ def new_process():
     d_b.close()
 
 
-new_process()
+if __name__ == "__main__":
+    new_process()
+    
