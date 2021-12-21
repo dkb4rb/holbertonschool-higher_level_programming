@@ -24,7 +24,7 @@ def new_process():
     cur = d_b.cursor()
 
     """Executing the query"""
-    cur.execute("SELECT (id) (name) FROM states WHERE (name) ORDER BY states.id ASC")
+    cur.execute("""SELECT * FROM `states` WHERE Name LIKE BINARY 'N%' ORDER BY `id`""")
 
     """ Show the results find """
     [print(state) for state in cur.fetchall()]
