@@ -6,6 +6,7 @@ Create ne function to conect MySQLdb
 import sys
 import MySQLdb
 
+
 def new_process():
     """ Values for the connect to the database """
     usr = sys.argv[1]
@@ -24,7 +25,8 @@ def new_process():
     cur = d_b.cursor()
 
     """Executing the query"""
-    cur.execute("""SELECT * FROM `states` WHERE Name LIKE BINARY 'N%' ORDER BY `id`""")
+    cur.execute("""
+    SELECT * FROM `states` WHERE Name LIKE BINARY 'N%' ORDER BY `id`""")
 
     """ Show the results find """
     [print(state) for state in cur.fetchall()]
