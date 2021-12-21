@@ -38,4 +38,3 @@ def new_process():
 
 if __name__ == "__main__":
     new_process()
-    
