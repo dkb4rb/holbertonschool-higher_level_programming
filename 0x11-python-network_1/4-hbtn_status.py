@@ -2,7 +2,7 @@
 """
 Import libraries
 """
-from urllib import request
+import requests
 
 url = 'https://intranet.hbtn.io/status'
 reqt = request.get(url)
