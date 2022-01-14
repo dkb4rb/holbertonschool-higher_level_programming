@@ -1,4 +1,4 @@
 #!/bin/bash
-# Curl the file and ip the host 
+# Curl 
 
-curl -Is $1 | wc -l
+curl -sI "$1" | wc -c
