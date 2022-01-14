@@ -1,4 +1,3 @@
 #!/bin/bash
 # Curl 
-
-curl -sI "$1" | wc -c
+curl -sI "$1" | wc -l
