@@ -12,6 +12,7 @@ def new_request():
     with request.urlopen(reqt) as response:
         print(dict(response.headers).get("X-Request-Id"))
 
+
 """ Declare the flush to program """
 if __name__ == "__main__":
     new_request()
