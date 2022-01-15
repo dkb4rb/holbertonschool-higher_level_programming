@@ -1,3 +1,5 @@
 #!/bin/bash
 # Curl display all methods 
-curl -sH "X-HolbertonSchool-User-Id: 98" "$1"
+curl -sLX GET -H "X-School-User-Id: 98" $1
+
+
